@@ -1,0 +1,117 @@
+ /* This is for all page. */
+ * {
+    margin: 0;
+    padding: 0;
+}
+
+/* This css is for whole body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* This css is for header of the body */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f8f8f8;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    height: 80px;
+    margin-right: 10px;
+}
+
+/* This css is for bootstrap to change the background color */
+.bg-body-tertiary ul {
+    background-color: #f8f8f8;
+}
+
+.bg-body-tertiary ul a {
+    color: black;
+}
+
+.bg-body-tertiary ul a:hover {
+    color: rgb(132, 46, 213);
+}
+
+
+/* This css is for main body */
+.welcome-section {
+    text-align: center;
+    color: black;
+    padding: 25px;
+}
+
+.welcome-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.welcome-row img {
+    width: 20%;
+}
+
+
+/* This css is for footer */
+.footer_container {
+    background: #EFEEEE;
+    padding-top:30px;
+}
+.footer_container h5{
+   height: 25px;
+}
+
+.footer_container ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.footer_container ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.information-links i {
+    color:   rgb(132, 46, 213);
+}
+
+.social-links ul li {
+    display: inline;
+    padding-right: 35px;
+}
+
+.social-links i {
+    font-size: 20px;
+    color: rgb(132, 46, 213);
+}
+
+.copyright-text {
+    background-color: #f4ebf2;
+    color: black;
+    padding: 10px;
+}
+
+/* This is for responsiveness */
+@media (max-width: 767.98px) {
+    .logo h2 {
+        font-size: 20px;
+    }
+
+    .welcome-row img {
+        width: 100px;
+    }
+
+   
+}

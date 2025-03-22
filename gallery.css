@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+}
+
+.filter-btn {
+  border-radius: 40px !important;
+  transition: background-color 0.2s;
+  border: 1.8px solid #4b07f6 !important;
+}
+
+.filter-btn.active,
+.filter-btn:hover {
+  background-color: #8432d5 !important;
+  color: #fff;
+  border-color: #8432d5;
+}
+
+.portfolio-items {
+  margin: 0;
+  padding: 0;
+}
+
+.portfolio-item .card {
+  border: none;
+  border-radius: 6px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+  overflow: hidden;
+}
+
+.portfolio-item .card:hover {
+  transform: scale(1.02);
+}
+
+.portfolio-item .card-img-top {
+  object-fit: cover;
+  height: 200px;
+  width: 100%;
+}
+
+@media (max-width: 767.98px) {
+  .portfolio-item .card-img-top {
+    height: 180px;
+  }
+}

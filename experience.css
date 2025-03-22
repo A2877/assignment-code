@@ -1,0 +1,117 @@
+/* Base Styles */
+* {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #fff;
+    color: #333;
+  }
+  
+  /* Timeline Container */
+  .timeline {
+    position: relative;
+    margin: 0 auto;
+    padding: 40px 0;
+    max-width: 800px;
+  }
+  .timeline::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 4px;
+    height: 100%;
+    background: #ccc;
+    transform: translateX(-50%);
+  }
+  
+  /* Timeline Item */
+  .timeline-item {
+    position: relative;
+    margin: 20px 0;
+    width: 50%;
+    padding: 20px 30px;
+    background: #f9f9f9;
+    border-radius: 6px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.6s ease-out;
+  }
+  
+  /* When item is in view */
+  .timeline-item.animate {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  /* Alternate item positions */
+  .timeline-item:nth-child(odd) {
+    left: 0;
+    text-align: right;
+  }
+  .timeline-item:nth-child(even) {
+    left: 50%;
+    text-align: left;
+  }
+  
+  /* Timeline Content */
+  .timeline-content {
+    position: relative;
+    padding: 10px 20px;
+  }
+  .timeline-content h3 {
+    margin-top: 0;
+    color: #8432d5;
+  }
+  .timeline-content .date {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 8px;
+  }
+  
+  /* Timeline Icon */
+  .timeline-icon {
+    position: absolute;
+    top: 20px;
+    width: 40px;
+    height: 40px;
+    background: #8432d5;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 20px;
+  }
+  .timeline-item:nth-child(odd) .timeline-icon {
+    right: -20px;
+  }
+  .timeline-item:nth-child(even) .timeline-icon {
+    left: -20px;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .timeline {
+      padding: 20px 0;
+    }
+    .timeline::before {
+      left: 20px;
+    }
+    .timeline-item {
+      width: 100%;
+      padding-left: 60px;
+      padding-right: 20px;
+      margin: 20px 0;
+      left: 0 !important;
+      text-align: left !important;
+    }
+    .timeline-item .timeline-icon {
+      left: 0;
+      right: auto;
+    }
+  }
+  

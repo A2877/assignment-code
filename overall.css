@@ -1,0 +1,54 @@
+/* This css is for whole body */
+body {
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* This css is for header of the body */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f8f8f8;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    height: 80px;
+    margin-right: 10px;
+}
+
+/* This css is for bootstrap to change the background color */
+.bg-body-tertiary ul {
+    background-color: #f8f8f8;
+}
+
+.bg-body-tertiary ul a {
+    color: black;
+}
+
+.bg-body-tertiary ul a:hover {
+    color: rgb(132, 46, 213);
+}
+
+/* This css is for footer */
+
+.copyright-text {
+    background-color: #f4ebf2;
+    color: black;
+    padding: 10px;
+}
+
+/* This is for responsiveness */
+@media (max-width: 767.98px) {
+    .logo h2 {
+        font-size: 20px;
+    }
+
+}

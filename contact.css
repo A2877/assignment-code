@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #fff;
+}
+
+/* Main Content */
+main h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+main p.lead {
+    font-size: 19px;
+    color: black;
+}
+
+/* Contact Form Styles */
+#contactForm {
+    background: #f9f9f9;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+#contactForm .form-control {
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+#contactForm .form-label {
+    font-weight: 500;
+}
+
+#contactForm button[type="submit"] {
+    background-color: #8020e0;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 16px;
+    transition: background-color 0.2s ease;
+}
+
+#contactForm button[type="submit"]:hover {
+    background-color: #6a28b7;
+}
+
+/* Contact Information Section */
+.contact-info {
+    border: 1px solid #ddd;
+}
+
+.contact-info h3 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #44089e;
+}
+
+.contact-info p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.contact-info i {
+    color: #8432d5;
+    margin-right: 8px;
+}
+
+.social-links a {
+    color: #8432d5;
+    font-size: 20px;
+    transition: color 0.2s;
+}
+
+.social-links a:hover {
+    color: #6a28b7;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header .logo h2 {
+        font-size: 20px;
+    }
+
+    main h1 {
+        font-size: 28px;
+    }
+}
